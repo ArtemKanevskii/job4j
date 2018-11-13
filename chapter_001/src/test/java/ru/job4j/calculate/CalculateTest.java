@@ -5,7 +5,7 @@ import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
  /**
- * Class CalculateTest 
+ * Class CalculateTest.
  * 
  * Тестирование вывода заданной строки в консоль.
  * @author Artem Kanevskii
@@ -13,9 +13,9 @@ import static org.junit.Assert.assertThat;
  * @version 0.1
  */
  public class CalculateTest {
-/**
-* Test echo.
-*/
+ /**
+ * Test echo.
+ */
 @Test
 public void whenTakeNameThenTreeEchoPlusName() {
     String input = "Artem Kanevskii";
