@@ -6,7 +6,6 @@ import static org.junit.Assert.assertThat;
 
  /**
  * Class CalculateTest.
- * 
  * Тестирование вывода заданной строки в консоль.
  * @author Artem Kanevskii
  * @since 12.11.2018
