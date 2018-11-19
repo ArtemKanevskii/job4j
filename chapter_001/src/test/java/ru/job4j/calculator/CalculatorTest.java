@@ -17,7 +17,7 @@ public class CalculatorTest {
     @Test
     public void whenSubstract3Minus1Then2() {
         Calculator calc = new Calculator();
-        calc.substract(3D,1D);
+        calc.substract(3D, 1D);
         double result = calc.getResult();
         double expected = 2D;
         assertThat(result, is(expected));
@@ -25,7 +25,7 @@ public class CalculatorTest {
     @Test
     public void whenDiv3On1Then3() {
         Calculator calc = new Calculator();
-        calc.div(3D,1D);
+        calc.div(3D, 1D);
         double result = calc.getResult();
         double expected = 3D;
         assertThat(result, is(expected));
@@ -33,7 +33,7 @@ public class CalculatorTest {
     @Test
     public void whenMultiple3On1Then3() {
         Calculator calc = new Calculator();
-        calc.multiple(3D,1D);
+        calc.multiple(3D, 1D);
         double result = calc.getResult();
         double expected = 3D;
         assertThat(result, is(expected));
