@@ -9,6 +9,12 @@ package ru.job4j.max;
  */
 
 public class Max {
+    /**
+     * Возвращает максимальное из двух чисел с помощью тернарного условия.
+     * @param first - первое число.
+     * @param second  - второе число для сравнения с первым.
+     * @return - максимальное из двух чисел.
+     */
     public int max(int first, int second) {
         return (first > second) ? first : second;
     }
