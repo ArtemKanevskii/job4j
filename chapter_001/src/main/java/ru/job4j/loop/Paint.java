@@ -7,6 +7,46 @@ package ru.job4j.loop;
  */
 public class Paint {
     /**
+     * Метод строит правую сторону треугольника.
+     * @param height - высота треугольника.
+     * @return возврашает правую сторону треугольника.
+     */
+    public String rightTrl(int height) {
+        StringBuilder screen = new StringBuilder();
+        int weight = height;
+        for (int row = 0; row != height; row++) {
+            for (int column = 0; column != weight; column++) {
+                if (row >= column) {
+                    screen.append("^");
+                } else {
+                    screen.append(" ");
+                }
+            }
+            screen.append(System.lineSeparator());
+        }
+        return screen.toString();
+    }
+    /**
+     * Метод строит левую сторону треугольника.
+     * @param height - высота треугольника.
+     * @return возврашает левую сторону треугольника.
+     */
+    public String leftTrl(int height) {
+        StringBuilder screen = new StringBuilder();
+        int weight = height;
+        for (int row = 0; row != height; row++) {
+            for (int column = 0; column != weight; column++) {
+                if (row >= weight - column - 1) {
+                    screen.append("^");
+                } else {
+                    screen.append(" ");
+                }
+            }
+            screen.append(System.lineSeparator());
+        }
+        return screen.toString();
+    }
+    /**
      * Строит пирамиду в псевдографике из символа ^ и пробелов.
      * @param height - высота пирамиды.
      */
