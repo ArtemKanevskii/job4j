@@ -12,13 +12,14 @@ public class Check {
     /**
      * Method mono.
      * @param data имя массива.
-     * @result Результат проверки всех элементов в массиве.
+     * @return  Результат проверки всех элементов в массиве.
      */
     public boolean mono(boolean[] data) {
         boolean result = true;
         for (int index = 1; index != data.length; index++) {
             if (data[index] != data[index - 1]) {
                 result = false;
+                break;
             }
         }
         return result;
