@@ -8,7 +8,7 @@ import static org.junit.Assert.assertThat;
 
 public class ArrayDuplicateTest {
     @Test
-    public void whenRemoveDuplicatesThenArrayWithoutDuplicate(){
+    public void whenRemoveDuplicatesThenArrayWithoutDuplicate() {
         String[] input = {"Привет", "Мир", "Привет", "Супер", "Мир"};
         String[] expect = {"Привет", "Мир", "Супер"};
         ArrayDuplicate duplicate = new ArrayDuplicate();
