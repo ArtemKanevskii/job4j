@@ -16,4 +16,25 @@ public class ArrayMergeTest {
         assertThat(value, is(expected));
     }
 
+    @Test
+    public void whenAddTwoArraysTwo() {
+
+        ArrayMerge arrayMerge = new ArrayMerge();
+        int[] left = new int[] {1,2,3,4,5};
+        int[] right = new int[] {2,4,6,7};
+        int[] value = arrayMerge.arrayMerge(left, right);
+        int[] expected = new int[] {1,2,2,3,4,4,5,6,7};
+        assertThat(value, is(expected));
+    }
+    @Test
+    public void whenAddTwoArraysZero() {
+
+        ArrayMerge arrayMerge = new ArrayMerge();
+        int[] left = new int[] {};
+        int[] right = new int[] {};
+        int[] value = arrayMerge.arrayMerge(left, right);
+        int[] expected = new int[] {};
+        assertThat(value, is(expected));
+    }
+
 }
