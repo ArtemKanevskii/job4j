@@ -72,22 +72,21 @@ public class Logic {
         int row = 0;
         int cell = 0;
         for (row = 0; row != table.length; row++) {
+            int checkCell = 0;
             int checkRow = 0;
             for (cell = 0; cell != table.length; cell++) {
-                checkRow = table[row][cell] + checkRow;
-                if (checkRow == table.length) {
-                    result = true;
-                    break;
+                if (table[cell][row] == 1) {
+                    checkCell++;
                 }
                 if (table[row][cell] == 1) {
-                    for (int checkCell = 0; checkCell < table.length; checkCell++) {
-                        if (table[checkCell][cell] == 0) {
-                            result = false;
-                            break;
-                        }
-                        result = true;
-                    }
+                    checkRow++;
                 }
+            }
+            if (checkRow == table.length) {
+                result = true;
+            }
+            if (checkCell == table.length) {
+                result = true;
             }
         }
         return result;
