@@ -84,9 +84,11 @@ public class Logic {
             }
             if (checkRow == table.length) {
                 result = true;
+                break;
             }
             if (checkCell == table.length) {
                 result = true;
+                break;
             }
         }
         return result;
